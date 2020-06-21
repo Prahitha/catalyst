@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Room</title>
+	<link rel="icon" href="../../mainPage/img/icon.ico">
+	<script src="http://cdn.pubnub.com/pubnub.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<h1 class="welcome"> Welcome to Chat Room!</h1>
+	<div class="login">
+	<input id="userName" type="text" placeholder="Enter your name here" class="userNameBar" />
+	<button class="join" onclick="joinRoom()">Join</button>
+	</div>
+
+	<script type="text/javascript">
+		function noAccess(){
+			window.location = 'login.html';
+		}
+
+		function joinRoom() { debugger;
+			var id = $('#userName').val();
+			console.log(id);
+			if(id.length<1){
+				alert("Please enter your name!");
+				noAccess();
+				return false;
+			}
+			else{
+			window.location = 'chatRoom.html?id=' + id; 
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    background-color: bisque;
+    text-align: center;
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.userList {
+	height:500px; 
+	width:200px; 
+	background-color:#ffd199; 
+	position: absolute;
+	top: 15%;
+	left: 10%;
+}
+
+.chatHistory {
+	height:500px; 
+	width:700px; 
+	background-color:#ffd199; 
+	position: absolute;
+	top: 15%;
+	left: 35%;
+	overflow: hidden;
+	text-align: start;
+}
+
+.message {
+	width: 600px;
+	position: absolute;
+	top: 77%;
+	left: 36%;
+}
+
+.sendButton {
+	position: absolute;
+	top: 77%;
+	left: 76.2%;
+}
+
+.leaveButton {
+	position: absolute;
+	top: 77%;
+	left: 14%;
+}

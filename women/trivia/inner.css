@@ -1,0 +1,112 @@
+body{
+    background-color: cornsilk;
+    text-align: center;
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
+
+.container {
+    perspective: 1000px;
+    text-align:left;
+    user-select: none; 
+    cursor: pointer;
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+  
+  .card.flip {
+    transform: rotateY(180deg);
+  }
+
+  .card {
+    transition: 0.6s;
+    width: 320px;
+    height: 480px;
+    transform-style: preserve-3d;
+    position: relative;
+    margin-top: 90px;
+  }
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 480px;
+  }
+  .front {
+    z-index: 2;
+    transform: translateZ(0.1px);
+    transform: rotateY(0deg);
+    background-size: 100%;
+    background-position: 20% 30%;
+    transition: background 0.3s;
+  }
+  .back {
+    transform: rotateY(180deg);
+    background-color: black;
+  }
+  .front:hover{
+    background-size: 120%;
+    background-position: 20% 30%;
+    transition: background 0.5s;
+  }
+
+  .description {
+      margin: 15px;
+      text-align: justify;
+  }
+
+  .front h2{
+      margin-top: 400px;
+      margin-left: 20px;
+      background-color: black;
+      opacity: 0.7;
+  }
+
+  .front h2:hover{
+      opacity: 1;
+  }
+
+  .belle {
+    background: url(../../happyTime/memoryGame/images/gertrude-belle-elion.jpg) no-repeat center;
+  }
+
+  .ann {
+    background: url(../../happyTime/memoryGame/images/ann-tsukamoto.jpg) no-repeat center;
+  }
+
+  .marie {
+    background: url(../../happyTime/memoryGame/images/marie-curie.jpg) no-repeat center;
+  }
+
+  .lene {
+    background: url(../../happyTime/memoryGame/images/lene-vestergaard-hau.jpg) no-repeat center;
+  }
+
+  .sherman {
+    background: url(../../happyTime/memoryGame/images/mary-sherman-morgan.jpg) no-repeat center;
+  }
+
+  .olga{
+      background: url(../../happyTime/memoryGame/images/olga-gonzalez-sanabria.jpg) no-repeat center;
+  }
+
+  .hedy{
+    background: url(../../happyTime/memoryGame/images/hedy-lamarr.jpg) no-repeat center;
+}
+.kwolek{
+    background: url(../../happyTime/memoryGame/images/stephanie-kwolek.jpg) no-repeat center;
+}
+.lise{
+    background: url(../../happyTime/memoryGame/images/lise-meitner.jpg) no-repeat center;
+}
+.evelyn{
+    background: url(../../happyTime/memoryGame/images/evelyn-berezin.jpg) no-repeat center;
+}
+.josephine{
+    background: url(../../happyTime/memoryGame/images/josephine-cochrane.jpg) no-repeat center;
+}
